@@ -60,3 +60,7 @@ img {
     margin: 0 auto; 
 }
 
+.shadow {
+    box-shadow: 5px 5px 5px rgb(223, 223, 223);
+    border: 1px solid rgb(199, 199, 199);
+}

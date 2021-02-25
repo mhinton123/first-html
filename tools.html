@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>
+    <title>Browser Dev Tools.</title>
+    <!-- Linking the style.css file-->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is the link to google fonts RocknrollOne-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <img class="icon" src="./images/tools.png" alt="">
+        <h1>Browser Dev Tools</h1>
+    </div>
+    <div class="main">
+        <h2>What are the Browser Dev Tools?</h2>
+        <img class="shadow" src="./images/d1.png" alt="">
+        <ul>
+            <li>They are a set of tools built into your Web Browser that allow you to Inspect and Manipulate code.  </li>
+            <li>You can open the <strong>Dev Tools</strong> with <strong>Ctrl + Shift + I</strong>  </li>
+        </ul>
+
+        <h2>The DOM Explorer</h2>
+        <p>The DOM Explorer Allows you to inspect & edit the HTML on the fly which is hand for live testing and debugging.</p>
+        <img class="shadow" src="./images/d2.png" alt="">
+        <ul>
+            <li>You can hover over individual element and it will highlight the corresponding content on the Webpage and how the CSS styling is affecting it e.g. Padding and Margins </li>
+            <li>Changing the source code within the browser does not save the changes to your html file.  </li>
+        </ul>
+        <p>If you <strong>Right-click</strong> on an element, you get the following options: </p>
+        <img class="shadow" src="./images/d3.png" alt="">
+        <ul>
+            <li><strong>Dekete Node</strong> - (sometimes Delete Element). Deletes the current element. </li>
+            <li><strong>Edit as HTML</strong> - (sometimes Add attribute/Edit text). Lets you change the HTML and see the results on the fly. Very useful for debugging and testing.</li>
+            <li><strong>:hover/:active/:focus</strong> - Forces element states to be toggled on, so you can see what their styling would look like.</li>
+            <li><strong>Coyp/Copy as HTML</strong> - Copy the currently selected HTML.</li>
+            <li>Some browsers also have Copy CSS Path and Copy XPath available, to allow you to copy the CSS selector or XPath expression that would select the current HTML element. </li>
+        </ul>
+
+        <h2>The CSS Editor</h2>
+        <p>As the name implies, the CSS Editor allows you to inspect & edit the HTML on the fly which is hand for live testing and debugging.  </p>
+        <img class="shadow" src="./images/d4.png" alt="">
+        <p>These features are especially handy: </p>
+        <ul>
+            <li>The rules applied to the current element are shown in order of most-to-least-specific. </li>
+            <li>Click the checkboxes next to each declaration to see what would happen if you removed the declaration. </li>
+            <li>Click the little arrow next to each shorthand property to show the property's longhand equivalents. </li>
+            <li>Click a property name or value to bring up a text box, where you can key in a new value to get a live preview of a style change. </li>
+            <li>Next to each rule is the file name and line number the rule is defined in. Clicking that rule causes the dev tools to jump to show it in its own view, where it can generally be edited and saved. </li>
+            <li>You can also click the closing curly brace of any rule to bring up a text box on a new line, where you can write a completely new declaration for your page. </li>
+        </ul>
+        <p>You'll notice a number of clickable tabs at the top of the CSS Viewer: </p>
+        <ul>
+        <li><strong>Computed:</strong> This shows the computed styles for the currently selected element (the final, normalized values that the browser applies). </li>
+        <li><strong>Layout:</strong> In Firefox, this area includes two sections: </li>
+         
+        <ul>
+            <li><u>Box Model:</u> represents visually the current element's box model, so you can see at a glance what padding, border and margin is applied to it, and how big its content is. </li>
+            <li><u>Grid:</u> If the page you are inspecting uses CSS Grid, this section allows you to view the grid details. </li>
+        </ul>
+        <li><strong>Fonts:</strong> In Firefox, the Fonts tab shows the fonts applied to the current element. </li>
+      </ul>
+        <p class="sign">Author: Matthew Hinton</p>
+    </div>
+</body>
+</html>
