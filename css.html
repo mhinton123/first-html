@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta>
+    <title>The Basics of CSS.</title>
+    <!-- Linking the style.css file-->
+    <link rel="stylesheet" href="style.css">
+    <!-- this is the link to google fonts RocknrollOne-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <img class="icon" src="./images/css.png" alt="CSS Logo">
+        <h1>The Basics of CSS</h1>
+    </div>
+    <div class="main">
+        <h2>What is CSS</h2>
+        <p>CSS is the styling of the web page. You have some HTML code which states what content is going to be displayed e.g. how many paragraphs and headings there will be and what will be in them. You then use CSS to control how that content will look, for example, what color the text will be, where abouts images will be positions on the webpage etc. </p>
+        
+        <H2>How to link your CSS sheet to your HTML file: </H2>
+        <img class="tut" src="./images/css1.png" alt="How to Link css.style">
+        <ul>
+            <li>Create a <strong>style.css</strong> file</li>
+            <li>In the <strong>head</strong> of the html file use the above command to link the two files together </li>
+        </ul>
+
+        <h2>The anatomy of a CSS Rule:</h2>
+        <img class="tut" src="./images/css2.png" alt="">
+        <ul>
+            <li><strong>Selector</strong> - This is where you select which Element or Class you want to target </li>
+            <li><strong>Property</strong> - This is a way in which you can style your CSS element. In this example color is the property where you can change the <strong>color</strong> of the text </li>
+            <li><strong>Property Value</strong> - This is where you set the value of the property, in this example: setting the text to red</li>
+            <li><strong>Declaration</strong> -  Is a single rule within the CSS Rule. In this example, the declaration is <strong>color : red;</strong> </li>
+        </ul>
+        <p>Additional notes for the CSS rule </p>
+        <ul>
+            <li>The rule must be encapsulated in-between two {curly brackets}</li>
+            <li>The <strong>Property</strong> and the <strong>Property Value</strong> must be separated by a colon: </li>
+            <li>Each Declaration must be separated by a <strong>semi-colon; </strong></li>
+            <li>To select multiple elements, use a comma in between, for example: <strong>p, li, h1 </strong></li>
+        </ul>
+
+        <h2>The different types of Selectors </h2>
+        <table>
+            <tr>
+                <th>Selector Name</th>
+                <th>What Does it Select</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>Element Selector  </td>
+                <td>A specific <tag> which will affect all elements on that web page  </td>
+                <td><strong>P {}</strong> - Selects <strong>p</strong> </td>
+            </tr>
+                <td>ID Selector</td>
+                <td>You can give a particular element an ID to target only that element. You cannot use the same ID twice on the same html page  </td>
+                <td><strong>#my-id</strong> - Selects <strong>p id="my-id"</strong> OR <strong>a id="my</strong></td>
+             </tr>
+             <tr>            
+                 <td>Class Selector</td>
+                 <td>You can give a particular element a specified class. More than one element can share that class </td>
+                 <td><strong>.my-id</strong> - Selects <strong>p class="my-id"</strong> AND <strong>h1 class="my-id"</strong> ECT</td>
+             </tr>
+             <tr>
+                 <td>Attribute Selector</td>
+                 <td>Selects the elements on that page with the specified attribute </td>
+                 <td><strong>img[src]</strong> - Selects <strong>img crs="myimage.png"</strong> NOT <strong>img</strong></td>
+             </tr>
+             <tr>
+                 <td>Pseudo-Class Selector</td>
+                 <td>Selects specified elements, but only when in a specific state. For example: when a mouse hovers over a Hyperlink </td>
+                 <td><strong>a:hover</strong> - Selects <strong>a</strong> but only when the users mouse is hovering over the link </td>
+             </tr>
+        </table>
+
+        <H2>How to change the font using Google Fonts: </H2>
+        <img class="tut" src="./images/css3.png" alt="">
+        <ol>
+            <li>Go to: <a href="https://fonts.google.com/">Google Fonts</a> and pick a font you like</li>
+            <li>Click on <strong>Select this Style+</strong></li>
+            <li>Copy the two links as shows above and paste them in the <strong>head</strong> of your <strong>index.html</strong></li>
+            <li>Go to your style.css file and create a rule selecting <strong>html</strong></li>
+            <li>Copy the CSS rule as shown above and paste it in your <strong>style.css </strong></li>
+        </ol>
+
+        <h2>All about Boxs in CSS</h2>
+        <p>All element within HTML are in a box. It's your duty to style them boxes with CSS. There are three different areas within the box. </p>
+        <img class="tut" src="./images/css4.png" alt="">
+        <ul>
+            <li><strong>Padding</strong> - This is the space around the content, in this case the text</li>
+            <li><strong>Border</strong> - This puts a border around the content and any padding </li>
+            <li><strong>Margin</strong> - The space around the outside of the border</li>
+        </ul>
+
+        <h2>Styling the Body</h2>
+        <p>There are a few declarations which are commonly used to style the body of the page (This the container which encapsulates everything) therefore this box is the size of the browser window by default. </p>
+        <img class="tut" src="./images/css5.png" alt="">
+        <ul>
+            <li><strong>Width</strong> - This sets the width of the body container, I have set it to <strong>auto</strong> so it is relative to the browser window</li>
+            <li><strong>Padding</strong> - Adds padding to the body container. I have set to <strong>Auto</strong> which I believe is 0 by default </li>
+            <li><strong>Margin</strong> - Set margin for the body container if needed. 0px for the top and bottom,(Here, <strong>auto</strong> is a special value that divides the available horizontal space evenly between left and right) </li>
+            <li><strong>Border</strong> -  Adds border to the body container if needed  </li>
+            <li><strong>Color</strong> - Sets the color for the contents in the body, this usually means the text </li>
+        </ul>
+
+        <h2>Positioning and Styling the Main Page Title: </h2>
+        <img class="tut" src="./images/css6.png" alt="">
+        <ul>
+            <li><strong>Margin</strong> - By default, the header has a nast big gap at the top and bottom of the header, we overwrite this and set it to <strong>0</strong></li>
+            <li><strong>Padding</strong> - Sets some padding for the to and bottom of the header, so that nothing is too close to it</li>
+            <li><strong>Color</strong> - Sets the color of the text to black</li>
+            <li><strong>Text-Shadow</strong> -  this creates a shadow effect for the text</li>
+                <ol>
+                    <li><strong>1st Value</strong> - Horizontal Offset</li>
+                    <li><strong>2nd Value</strong> - Vertical Offset</li>
+                    <li><strong>3rd Value</strong> - Blur Radius, a larger value will result in a for fuzzy shadow</li>
+                </ol>
+        </ul>
+
+        <h2>How to Center Images:</h2>
+        <img class="tut" src="./images/css7.png" alt="">
+        <ul>
+            <li>By settings your images to <strong>Display: Block; convert</strong>. This converts your images from an <strong>Inline Element</strong> to a <strong>Block Element</strong> so that we can add padding and margin to it if necessary </li>
+            <li><strong>Margin: auto;</strong> -  auto is a special value that divides the available horizontal space evenly between left and right of the images (Center) </li>
+        </ul>
+
+        <p class="sign">Author: Matthew Hinton</p>
+    </div>
+</body>
+</html>
