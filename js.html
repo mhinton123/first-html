@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>Javacript Basics</title>
+        <!-- Linking the style.css file-->
+        <link rel="stylesheet" href="style.css">
+        <!-- this is the link to google fonts RocknrollOne-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+        <script src="./scripts/main.js" defer></script> <!--this links the main.js file, the dfer attribute lets the HTML load when it hits the <script> tags to save running into loading problems-->
+    </head>
+    <body>
+
+        <div class="title-div">
+            <img class="icon" src="./images/js.png" alt="js">
+            <h1>Javacript Basics</h1>
+            <h3>Welcom</h3>
+            <p>I have built this website to teach myself on how to write a basic webpage using HTML.</p>
+        </div>
+        <div class="main"> 
+       
+            <h2>What is Javacript?</h2>
+            <p>Javascript (JS for short) is a dynamic programming language which allows you to create interactive web pages. For example: perform an action when the user presses a particular button. You can creat API's (Application Programming interfaces) with JS, 2D, 3D games, create a responsive Web design which changes the layout when viewed at different browser windows and much more! </p>
+            
+            <h2>How to link your Javascript file to your Webpage: </h2>
+            <img class="tut" src="./images/js1.png" alt="">
+            <ul>
+                <li>Create a <strong>scripts folder</strong> and create a <strong>main.js</strong> file </li>
+                <li>Paste the following link above into your <strong>Webpage.html</strong> </li>
+                <li>This acts the same as the <strong>link</strong> element you use to link a <strong>.css</strong> file </li>
+                <li>The defer attribute prevents loading issues for <strong>external scripts</strong>, otherwise the JS will run before the targeted elements are loaded, causing issue</li>
+            </ul>
+            <img class="tut" src="./images/js2.png" alt="">
+            <ul>
+                <li>This command can be used on <strong>internal Scripts</strong> to prevent JS loading issues </li>
+                <li>You can also just stick your <strong>script</strong> link at the bottom of your HTML code just bofore the <strong>/body</strong> tag so that all HTML is loaded before running any JS. </li>
+                <ul>
+                    <li>This old school workaround would cause a huge slowdown on sites which use a lot of JS </li>
+                </ul>
+            </ul>
+
+            <h2>How to create a Variable</h2>
+            <p>Here are some examples on how to create a Varaible using Javascript:</p>
+            <img class="tut" src="./images/js10.png" alt="">
+            <ul>
+                <li>You use single quotes if the value is a string, <strong>myVariable = 'string'</strong>  </li>
+                <li>You don’t use single quotes if you use a number, <strong>myVariable = 3</strong></li>
+            </ul>
+            <p>Variables can hold values of different data types:</p>
+            <table>
+                <tr>
+                    <th><u>Variable</u></th>
+                    <th><u>Explanation</u></th>
+                    <th><u>Example</u></th>
+                </tr>
+                <tr>
+                    <td><strong>String</strong></td>
+                    <td>This is a string of characters, normally forming words, which can then be printed out to the user later </td>
+                    <td><strong>Let MyVariable = 'string' ; </strong></td>
+                </tr>
+                    <td>Number</td>
+                    <td>This is simply a number, it can me whole, decimal or negative. Also known as integer. It hold a real numerical value which allows you to perform math equations  </td>
+                    <td><strong>Let MyVariable = 12345      2 + 2 = myVariable </strong></td>
+                 </tr>
+                 <tr>            
+                     <td><strong>Boolean</strong></td>
+                     <td>This hold either a TRUE or FALSE value. The words true and false are special key words which don’t need quotes </td>
+                     <td><strong>Let myVariable = true </strong></td>
+                 </tr>
+                 <tr>
+                     <td><strong>Array</strong></td>
+                     <td>A range of numbers stored. For example 5 random number between 1 - 100 </td>
+                     <td><strong>Let myVariable = ['twenty three', 77 , 'fourty three', 60, 99] </strong>- A particular value within that array can be called by its position number: - <strong>To call the number 77 above : myVariable[2]  </strong></td>
+                 </tr>
+                 <tr>
+                     <td><strong>Object</strong></td>
+                     <td>This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn. </td>
+                     <td><strong>let myVariable = document.querySelector('h1');</strong> - All of the above example too</td>
+                 </tr>
+            </table>
+
+            <h2>Conditionals - The IF Statement.</h2>
+            <img class="tut" src="./images/js3.png" alt="">
+            <ol>
+                <li>Sets the Variable <strong>myVar</strong> to <Strong>Choc Icecream</Strong></li>
+                <li>If Statement:</li>
+                <ol>
+                    <li>If the value of <strong>myVar</strong> IS equal to the string <strong>"Choc Icecream"</strong> - Then alert the user <strong>"Yay chocolate is my favourite flavour"</strong></li>
+                    <li>If the value of <strong>myVar</strong> is any other value - The alert the user <strong>"Aww, I wish it was chocolate"</strong></li>
+                </ol>
+            </ol>
+       
+            <h2>Functions</h2>
+            <img class="tut" src="./images/js4.png" alt="">
+            <ul>
+                <li>Functions were created so that you can re-use chunks of your code if needed instead of having to write them more than once </li>
+                <li>If you see something which looks like a variable name with parentheses at the end of it, its likely to be a function. For example:  <strong>thisFunction()</strong> </li>
+                <li>How to use a function = you encapsulate your chunk of code inside of a function, then you call that function every time you want to use it passing new value into it each time </li>
+            </ul>
+
+            <h2>Event Handlers</h2>
+            <img class="tut" src="./images/js5.png" alt="">
+            <ul>
+                <li>Using event allow you to make the website interactive.  </li>
+                <li>Events are code structures which describes an input from a user. For example .onclick = when a user click on a HTML element </li>
+                <li>Then define instructions inside that event handler which tells the website what to do in the event of a user clicking on that element </li>
+            </ul>
+
+            <h2>Creating an Image Changer</h2>
+            <img class="tut" src="./images/js6.png" alt="">
+            <p><u>Step-by-Step:</u></p>
+            <ol>
+                <li>Stores the <strong>img</strong> element as a variable <strong>myImg</strong> </li>
+                <li>Creates an <strong>Event Handler</strong>  equal to a nameless (anonymous) <strong>function()</strong> </li>
+                <li>Inside the <strong>function()</strong> function - selects the <strong>src</strong> attribute inside the <strong>img</strong> element and stores it inside a variable <strong>mySrc </strong></li>
+                <li>An IF Statement</li>
+                <ol>
+                    <li>If the <strong>src</strong> file path is equal to the original file path = Change the <strong>src</strong> path to the second image </li>
+                    <li>If the <strong>src</strong> file path is not equal to the original file path = Change the <strong>src</strong> path back to the original image </li>
+                </ol>
+            </ol>
+            <a href="./js.html">Click the Javasript Logo at the top of the page to see this work</a>
+
+            <h2>Adding a personalised Welcome Message</h2>
+            <img class="tut" src="./images/js7.png" alt="">
+            <p><u>Step-by-Step:</u></p>
+            <ol>
+                <li>Stores the <strong>h3</strong> title as a variable <strong>myTitle</strong> </li>
+                <li>Stores the <strong>button</strong> element as a variable <strong>myButton</strong> </li>
+                <li>An IF Statement</li>
+                <ol>
+                    <li>If the <strong>localstorage</strong> does not have a name = Run <strong>changeName()</strong> function </li>
+                    <li>Otherwise, get the name stored in the local storage and store it as a string variable <strong>storedName</strong> </li>
+                </ol>
+            </ol>
+            <p><u>changeName() Function:</u></p>
+            <ol>
+                <li>When the user clicks on the <strong>button</strong> element: </li>
+                <ol>
+                    <li>Prompt user to enter their name and store it as a string variable <strong>usrName </strong></li>
+                    <li>Store the name in the browser using the <strong>localStorage API</strong> and <strong>.setItem()</strong> function </li>
+                    <li>Change the <strong>h3</strong> title to <strong>"Hello: (Users Name)"</strong> </li>
+                </ol>
+            </ol>
+            <p>Click the Button below to change the Welcome name at the <a href="./js.html">top of the screen</a></p>
+            <button>Change Name :)</button>
+        
+            <p class="sign">Author: Matthew Hinton</p>
+        </div>
+
+
+        
+       
+        
+    </body>
+</html>
