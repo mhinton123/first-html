@@ -10,10 +10,18 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
+    <div class="nav-bar">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="css.html" class="nav-button">CSS Basics</a>
+        <a href="js.html" class="nav-button">Javacript Basics</a>
+        <a href="tools.html" class="nav-button">Devs Tools</a>
+    </div>
+    <div class="main-win">  
     <div class="title">
         <img class="icon" src="./images/css.png" alt="CSS Logo">
-        <h1>The Basics of CSS</h1>
+        <h1>The Basics of CSS</h1> 
     </div>
+    <hr>
     <div class="main">
         <h2>What is CSS</h2>
         <p>CSS is the styling of the web page. You have some HTML code which states what content is going to be displayed e.g. how many paragraphs and headings there will be and what will be in them. You then use CSS to control how that content will look, for example, what color the text will be, where abouts images will be positions on the webpage etc. </p>
@@ -23,6 +31,21 @@
         <ul>
             <li>Create a <strong>style.css</strong> file</li>
             <li>In the <strong>head</strong> of the html file use the above command to link the two files together </li>
+        </ul>
+
+        <h2>Inline CSS (Style Attribute)</h2>
+        <img class="tut" src="./images/css8.png" alt="">
+        <ul>
+            <li>Using the <strong>style=""</strong> html attribute </li>
+            <li>You would use inline CSS when you only want to change a <strong>single</strong> element, for example, just one h2 heading and not the rest of the h2 headings</li>
+            <li>An alternate way would be to give is a <strong>.class</strong> and define the styling in the main css style sheet </li>
+        </ul>
+
+        <h2>Using CSS inside your HTML Code (CSS block) </h2>
+        <img class="tut" src="./images/css9.png" alt="">
+        <ul>
+            <li>This is known as a css block becuase it is a block of CSS code which lives inside the HTML document</li>
+            <li>A CSS block must live inside the <strong>style</strong> brackets</li>
         </ul>
 
         <h2>The anatomy of a CSS Rule:</h2>
@@ -73,6 +96,57 @@
                  <td><strong>a:hover</strong> - Selects <strong>a</strong> but only when the users mouse is hovering over the link </td>
              </tr>
         </table>
+
+            <h2>Relative vs Absolute units for sizing elements </h2>
+            <a href="https://www.w3schools.com/css/css_font_size.asp ">Read this page on the subject</a>
+            <ul>
+                <li>There are two types of sizing units used to size a html element </li>
+                <li><strong>Absolute:</strong> This measurement is a <strong>fixed</strong> measurement based on a <strong>physical unit</strong> of measure </li>
+                <ul>
+                    <li>Good if the size of the output window is known </li>
+                    <li>The size of text will not change if the user changed the text size </li>
+                    <li>In CSS use px (pixels) </li>
+                </ul>
+                <li><strong>Relative:</strong> these units are relative to another length value </li>
+                <ul>
+                    <li>This sizing is more <strong>dynamic</strong> as it will resize the text if the user changes the default browser text size </li>
+                    <li>Em is used. 1 em = 16px (the default browser text size) </li>
+                </ul>
+                <li>A stardard practice which should be used when designing a modern webpage:</li>
+                <ul>
+                    <li>Set the body to font-size: 100%; and size everything else using em to avoid issues with old ie </li>
+                </ul>
+            </ul>
+
+            <h2>Precendence of CSS</h2>           
+            <p>CSS reads CSS codes sequentially. This means that if two values of a particular HTML element conflict  each other, one must take priority. </p>
+            <ul>
+            <li>From top being least priority:</li>
+            <ol>                    
+                <li>Element Selector</li>
+               <li>.class selector</li>
+               <li>#ID Selector</li>
+               <li>Inline CSS (style="" attribute)</li>                    
+               <li>!Important used at the end of a propety value</li>
+            </ol><br>
+               <li><strong>NOTE! </strong> If there is a conflict between two of the same selector types, the CSS will use one which was read last (closest to the bottom of the code)</li>
+            </ul>
+            
+            
+
+        <h2>How to use Variables within CSS</h2>
+        <p>We use variables within CSS to allow us to change the value of multiple property declarations within our CSS code. This means that we can just change the value of the variable instead of having to change 10 different properties throughout our code.</p>
+        <ul>
+            
+            <li>To Create a <STRONG>Global</STRONG> variable we must store these within the <strong>:root</strong> so they can be see by other declarations within the CSS code:</li><br>
+            <img class="tut li" src="./images/css10.png" alt="">
+            <li>To use that variable to assign a certain poperty to the variables value:</li>
+            <img class="tut li" src="./images/css11.png" alt="">
+            <li>To create a fallback so the browser has a default color to use in case of a problem <strong>var(variable-name, black)</strong> </li>
+            <li>To support older versions of IE (because they don’t support variables) create the same property before the variable declared property and give it a widely supported value </li>
+        </ul>
+
+
 
         <H2>How to change the font using Google Fonts: </H2>
         <img class="shadow" src="./images/css3.png" alt="">
@@ -127,5 +201,10 @@
 
         <p class="sign">Author: Matthew Hinton</p>
     </div>
+    </div>
 </body>
 </html>
+
+
+
+

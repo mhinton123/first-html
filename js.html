@@ -12,12 +12,19 @@
         <script src="./scripts/main.js" defer></script> <!--this links the main.js file, the dfer attribute lets the HTML load when it hits the <script> tags to save running into loading problems-->
     </head>
     <body>
-
+        <div class="nav-bar">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="css.html" class="nav-button">CSS Basics</a>
+            <a href="js.html" class="nav-button">Javacript Basics</a>
+            <a href="tools.html" class="nav-button">Devs Tools</a>
+        </div>
+        <div class="main-win">
         <div class="title-div">
             <img class="icon" src="./images/js.png" alt="js">
             <h1>Javacript Basics</h1>
-            <h3>Welcom</h3>
-            <p>I have built this website to teach myself on how to write a basic webpage using HTML.</p>
+            <hr>
+            <h3 style="text-align: right;">Welcome:</h3>
+            
         </div>
         <div class="main"> 
        
@@ -72,12 +79,12 @@
                  <tr>
                      <td><strong>Array</strong></td>
                      <td>A range of numbers stored. For example 5 random number between 1 - 100 </td>
-                     <td><strong>Let myVariable = ['twenty three', 77 , 'fourty three', 60, 99] </strong>- A particular value within that array can be called by its position number: - <strong>To call the number 77 above : myVariable[2]  </strong></td>
+                     <td><strong>Let myVariable = ['twenty three', 77 , 'fourty three', 60, 99] </strong><br><br> A particular value within that array can be called by its position number: <br><br> <strong>To call the number 77 above : myVariable[2]  </strong></td>
                  </tr>
                  <tr>
                      <td><strong>Object</strong></td>
                      <td>This can be anything. Everything in JavaScript is an object and can be stored in a variable. Keep this in mind as you learn. </td>
-                     <td><strong>let myVariable = document.querySelector('h1');</strong> - All of the above example too</td>
+                     <td><strong>let myVariable = document.querySelector('h1');</strong> <br><br> All of the above example too</td>
                  </tr>
             </table>
 
@@ -149,10 +156,6 @@
         
             <p class="sign">Author: Matthew Hinton</p>
         </div>
-
-
-        
-       
-        
+        </div>
     </body>
 </html>

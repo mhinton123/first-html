@@ -1,3 +1,9 @@
+
+
+:root {
+
+}
+
 html {
     font-size: 10px;
     font-family: "Open Sans", sans-serif; 
@@ -7,8 +13,12 @@ body {
     width: auto;
     padding: auto;
     margin: 0 auto;
-    border: 50px solid white;
+    
     color: black;
+}
+
+.main-win {
+    border: 50px solid white;
 }
 
 h1 {
@@ -16,21 +26,27 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 20px 0;
+    text-transform: capitalize;
 }
 
 h2 {
     font-size: 28px;
+    text-transform: capitalize;
 }
 
 h3 {
     font-size: 22px;
+    text-transform: capitalize;
 }
 
-p, li, tr, a{
+p, li, tr, a {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
+    
 }
+
+
 
 tr {
     text-align: left;
@@ -58,10 +74,29 @@ img {
 }
 
 .shadow {
-    box-shadow: 5px 5px 5px rgb(223, 223, 223);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border: 1px solid rgb(199, 199, 199);
 }
 
 .tut {
     border: 1px solid gray;
+}
+
+.li {
+    margin: 10px 0px;
+}
+
+.nav-bar {
+    position: fixed;
+    padding: 5px;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+}
+
+.nav-button {
+   padding: 0px;
+   margin: 0px 0px 0px 20px;
+   font-weight: 800;
+   color: black;
+
 }
